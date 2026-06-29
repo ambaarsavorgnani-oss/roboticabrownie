@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Brownie</title>
+    
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Caveat', cursive, sans-serif;
+            font-size: 19px;
+            background-color: #fcf8f5;
+            color: #ae4c5c;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .recipe-card {
+            background: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(90, 65, 45, 0.08);
+            border: 1px solid #f0e4dc;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px dashed #e6d5c7;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #632c39;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #a08470;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #632c39;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #c8a285;
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #8c4051;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .recipe-section {
+            margin-bottom: 35px;
+        }
+
+        .enjoy {
+            font-style: italic;
+            color: #c05f86;
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 35px;
+            border-top: 2px dashed #e6d5c7;
+            padding-top: 30px;
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-card">
+        <div class="header">
+            <h1>Tutorial: Brownie</h1>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Receta Tradicional</h2>
+            
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 huevos</li>
+                <li>100 gramos de mantequilla</li>
+                <li>150 gramos de azúcar (aproximadamente ¾ taza)</li>
+                <li>100 gramos de chocolate para taza (o 4 cucharadas de cacao amargo)</li>
+                <li>60 gramos de harina común (aproximadamente ½ taza)</li>
+            </ul>
+
+            <h3>Procedimiento:</h3>
+            <ol>
+                <li>Fundir la manteca con el chocolate a baño María o en el microondas.</li>
+                <li>Mezcla los dos huevos con el azúcar.</li>
+                <li>Incorpora el chocolate derretido a los huevos.</li>
+                <li>Agrega la harina con movimientos suaves.</li>
+                <li>Verter en un molde chico (aproximadamente 20x20 cm) enmantecado y cocinar a 180°C por 20 minutos.</li>
+              <li class="enjoy">Disfrutar :3</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Receta en taza:</h2>
+            
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 huevo</li>
+                <li>3 cucharadas de azúcar</li>
+                <li>2 a 3 cucharadas de cacao en polvo</li>
+                <li>3 cucharadas de harina</li>
+                <li>1 cucharada de aceite de girasol</li>
+                <li>2 a 3 cucharadas de leche</li>
+            </ul>
+
+            <h3>Procedimiento:</h3>
+            <ol>
+                <li>Colocar el azúcar, el cacao y la harina directamente en una taza apta para microondas, revolver.</li>
+                <li>Añadir el huevo, el aceite y la leche.</li>
+                <li>Batir con un tenedor hasta que no queden grumos.</li>
+                <li>Llevar la taza al microondas a potencia máxima por 2 minutos.</li>
+                <li class="enjoy">Disfrutar :3</li>
+            </ol>
+        </div>
+      
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/fd/2f/f0/fd2ff0e036886cb1dffef808190c0149.jpg" alt="Brownie" class="recipe-image">
+        </div>
+    </div>
+
+</body>
+</html>
