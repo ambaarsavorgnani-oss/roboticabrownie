@@ -60,6 +60,32 @@
             font-weight: 600;
         }
 
+        .recipe-nav {
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 30px;
+        }
+
+        .recipe-nav.bottom {
+            margin-top: 30px;
+            margin-bottom: 0;
+            border-top: 2px dashed #e6d5c7;
+            padding-top: 20px;
+        }
+
+        .recipe-nav a {
+            color: #c05f86;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+
+        .recipe-nav a:hover {
+            color: #632c39;
+            text-decoration: underline;
+        }
+
         h2 {
             font-size: 28px;
             color: #632c39;
@@ -113,12 +139,19 @@
 </head>
 <body>
 
-    <div class="recipe-card">
+    <div class="recipe-card" id="inicio">
         <div class="header">
             <h1>Tutorial: Brownie</h1>
         </div>
 
-        <div class="recipe-section">
+        <nav class="recipe-nav">
+            <a href="#inicio">Inicio</a> | 
+            <a href="#tradicional">Receta tradicional</a> | 
+            <a href="#taza">Receta en taza</a> | 
+            <a href="#resultado">Resultado</a>
+        </nav>
+
+        <div class="recipe-section" id="tradicional">
             <h2>Receta Tradicional</h2>
             
             <h3>Ingredientes:</h3>
@@ -136,12 +169,12 @@
                 <li>Mezcla los dos huevos con el azúcar.</li>
                 <li>Incorpora el chocolate derretido a los huevos.</li>
                 <li>Agrega la harina con movimientos suaves.</li>
-                <li>Verter en un molde chico (aproximadamente 20x20 cm) enmantecado y cocinar a 180°C por 20 minutos.</li>
-              <li class="enjoy">Disfrutar :3</li>
+                <li>Verter en un molde chico (aproximadamente 20x20 cm) enmantecado y cocinar a 180°C por 20 minutes.</li>
+                <li class="enjoy">Disfrutar :3</li>
             </ol>
         </div>
 
-        <div class="recipe-section">
+        <div class="recipe-section" id="taza">
             <h2>Receta en taza:</h2>
             
             <h3>Ingredientes:</h3>
@@ -164,9 +197,16 @@
             </ol>
         </div>
       
-        <div class="image-container">
+        <div class="image-container" id="resultado">
             <img src="https://i.pinimg.com/736x/fd/2f/f0/fd2ff0e036886cb1dffef808190c0149.jpg" alt="Brownie" class="recipe-image">
         </div>
+
+        <nav class="recipe-nav bottom">
+            <a href="#inicio">Inicio</a> | 
+            <a href="#tradicional">Receta tradicional</a> | 
+            <a href="#taza">Receta en taza</a> | 
+            <a href="#resultado">Resultado</a>
+        </nav>
     </div>
 
 </body>
